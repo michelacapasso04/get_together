@@ -1,0 +1,175 @@
+/************
+    SFONDO
+************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+[v-cloak] {
+    display: none;
+  }
+body{
+    width: 100%; height: 100%;
+    background: url( ../image/login.jpeg) no-repeat center top;
+    position: fixed;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: blur(2px) brightness(90%);
+    overflow-x: hidden;
+    background-attachment: fixed;
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pan{
+    background-color: white;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 10%;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#emailline{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+#iconmail{
+    margin-left: 15%;
+    height:  30px; 
+    width:  30px; 
+    opacity:  .20; 
+    transition:  all .3s ease; 
+}
+#email{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 5%;
+    color: coral;
+    vertical-align: middle;
+    font-size: 150%;
+}
+#emailform{
+    width: 50%;
+    border: none;
+    margin-left: 20px;
+    text-align: center;
+    border-bottom: 0.1px solid grey ;
+}
+#pswline{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding:2px;
+}
+
+#psw{
+    text-align: center;
+    margin-top: 2%;
+    color: coral;
+    vertical-align: middle;
+    font-size: 150%;
+}
+#pswform{
+    width: 50%;
+    border: none;
+    margin-left: 20px;
+    text-align: center;
+    border-bottom: 0.1px solid grey ;
+}
+#iconpsw{
+    margin-left: 15%;
+    height:  30px; 
+    width:  30px; 
+    opacity:  .20; 
+    transition:  all .3s ease; 
+    
+}
+#bottoni{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    color: red;
+}
+button { 
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+    vertical-align: middle;
+    border-radius:  25px; 
+    background-color: coral; 
+    color:white;
+    box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13); 
+    border:  none;
+    font-size: 110%;
+    margin: auto;
+    overflow-wrap: break-word;
+  }
+
+  .btn-facebook {
+    margin:auto;
+    margin-top: 10px;
+    background: #3B5998;
+    border-radius: 25px; 
+    color: #fff;
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    vertical-align: middle;
+    overflow-wrap: break-word;
+  }
+
+  .linktoregister{
+      text-align: center;
+  }
+  .linklog{
+      color: orange;
+  }
+  .linklog:hover{
+    color:red;
+}
+
+
+  @media only screen and (max-width: 870px) {
+
+    #pan{
+        background-color: white;
+        border-radius: 25px;
+        margin: auto;
+        margin-top: 10%;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    #pan{
+        background-color: white;
+        border-radius: 25px;
+        margin: auto;
+        margin-top: 20%;
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+  }

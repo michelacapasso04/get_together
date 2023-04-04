@@ -1,0 +1,256 @@
+.bar {
+    margin: 8px;
+    height: 80px;
+}
+
+.lateralbutton{
+    margin-top:0.5%;
+    text-align: center;
+    vertical-align: center;
+    height: fit-content;
+}
+#modifybutton{
+    height: 100%;
+}
+.parties-component{ 
+    margin: 2%;
+}
+.line{
+    display: flex;
+}
+
+.container-parties{
+    width: 50%;
+}
+.parties-elements{
+    margin-top: 3%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    font-size:150%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#link{
+    color: black;
+    width: 40%;
+    font-style: italic;
+    text-align: center;
+}
+/* ************************************ 
+            single party                    
+*************************************** */
+.barsmall {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 60px;
+    font-size: smaller;
+}
+.all{
+    padding: 3%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.backsave{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 100%;
+    padding:2%;
+}
+
+
+.title{
+    margin: auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.info-bar{
+    margin: auto;
+    font-weight: bold;
+    display:flex;
+    width: 80%;
+    padding: 40px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(249, 177, 101, 0.2), 0 6px 20px 0 rgba(249, 177, 101, 0.2);
+    vertical-align: middle;
+}
+.el{
+    display: flex;
+}
+.about{  
+    margin-right: 10px; 
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px; 
+}
+
+.value{
+    font-style: italic;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.middle{
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 60%;
+}
+.aboutcontent{
+    width: 80%;
+    margin:auto;
+}
+.middle .item-component{
+    width:30%
+}
+
+.elmod{
+    margin-bottom: 2%;
+    border-radius: 20px;
+    text-align: center;
+}
+.modtxt{
+    text-align: center;
+}
+.part-cont{
+    display: flex;
+}
+.down{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    
+}
+.comments-container{
+    overflow: scroll;
+    overflow-x:hidden ;
+    height: 90%;
+;
+}
+
+.comm-component{
+    border: solid;
+    border-color: rgba(249, 173, 92, 0.571);
+    width: 90%;
+    margin:auto;
+    height: 400px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:100px
+}
+.addmess {
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.addmess input{
+    margin-bottom: 5px;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    
+}
+.addmess button{
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.othercomm .messup{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:6px;
+}
+
+.messdown{
+    height: 20%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.commtxt{
+    width: 80%;
+    overflow-wrap: break-word;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.name{
+    font-size: 0.8em;
+    color: peru;
+}
+.date{
+    font-size: 0.6em;
+}
+.mycomm{
+    width: 50%;
+    border: solid;
+    border-color: moccasin;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.othercomm{
+    width: 50%;
+    border: solid;
+    border-color: peru;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 670px) {
+    .part-cont{
+        display: block;
+    }
+    .down{
+        width:100%;
+    }
+    .middle{
+        width:100%;
+    }
+    .middle .item-component{
+        width:80%
+    }
+    .info-bar{
+        display: block;
+    }
+    .line{
+        display: block;
+    }
+    .container-parties{
+        width: 90%;
+    }
+    .info-bar{
+        margin: auto;
+        font-weight: bold;
+        display:block;
+        width: 90%;
+        padding: 40px;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px 0 rgba(249, 177, 101, 0.2), 0 6px 20px 0 rgba(249, 177, 101, 0.2);
+        vertical-align: middle;
+    }
+    .elmod{
+        width: 80%;
+        font-size: 30px;
+    }
+    .title{
+        width: 90%;
+        font-size: 40px;
+    }
+}

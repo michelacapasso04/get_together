@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-orange{
+    background-color: coral;
+}
+.bg-main{
+    background-color: sandybrown;
+}
+
+.fill-orange{
+    fill: coral;
+}
+
+.bg-yellow{
+    /*background-color: #fad400;*/
+    background-color: rgb(223, 163, 10);
+
+}
+.bg-blue{
+    background-color: #21535b;
+}
+.bg-green{
+    /*background-color: #35b86c;*/
+    background-color: rgb(114, 148, 47);
+}
+.bg-red{
+    background-color: #a42e2ef1;
+}
+.active{
+    display: block !important;
+}
+.inactive{
+    display: none;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+}
+/************
+    NAVBAR
+*************/
+nav{
+    font-size: 2em;
+}
+.navbar-brand{
+    margin-right: 0;
+    margin-left: 170px;
+}
+#logo-nav{
+    width: 170px;
+}
+
+svg{
+    height: 45px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.right-icon{
+    margin-right: 10px;
+}
+
+.right-icon svg{
+    margin-right: 20px;
+}
+
+.left-icon{
+    margin-left: 30px;
+}
+#navbarNav{
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.profile-svg{
+    position: relative;
+}
+
+.notify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    font-size: 0.5em;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #a42e2ef1;
+    position: absolute;
+    left:30px;
+    top:30px;
+}
+
+/************
+ BANNER IMAGE
+*************/
+
+#banner-image{
+    overflow: hidden;
+    height: 30vh;
+}
+
+#banner-image img{
+    width: 100%;
+    margin-top: -30vh;
+}
+
+/************
+   VUE APP
+*************/
+
+#app{
+    width: 100vw;
+}
+#overlay{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0,0.7);
+}
+/************
+PARTY PROGRAM COMPONENT
+*************/
+.titlecreateparty{
+    text-align: center;
+    color:black;
+    font-weight: bolder;
+    margin:20px;
+}
+.partyProgram-component{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.partyProgram-component .high-bar{
+    height: 20%;
+    margin: 20px;
+}
+.settingParty-component{
+    width: 50%;
+}
+.friends-component{
+    width: 50%;
+}
+.label{
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: 400;
+
+}
+#name_party{
+    width: 300px;
+}
+
+.select-date{
+    border-top: 2px solid lightgrey;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.settingParty-component a{
+    color: white;
+    width: 20%;
+    margin: 20px;
+}
+.btn{
+    color: white;
+}
+.settingParty-component .btn{
+    margin: 20px;
+    width: 100px;
+}
+
+
+
+/************
+PARTY ITEMS COMPONENT
+*************/
+.party-component{
+    margin: 20px;
+}
+.items-conteiner{
+    display: flex;
+    margin-top: 10px;
+}
+.left-side{
+    width: 80%;
+    margin-right: 10px;
+}
+.right-side{
+    width:20%;
+    border-radius: 5px;
+    margin-left: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/************
+LIST COMPONENT
+*************/
+.list{
+    display: none;
+}
+.list-component{
+  border-top: 3px solid black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
+  padding: 10px;
+}
+.list-component h4{
+    text-align: center;
+}
+.list-component ul{
+    list-style: none;
+}
+.list-component li{
+    margin-left: 5px;
+}
+.list-component li::before{
+    content: "-";
+}
+.list-component a{
+    color: red;
+    margin-left:20px;
+}
+.list-component a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+.btn-create{
+    margin-top: 40px;    
+    margin-bottom: 40px;    
+    width: 100%;
+    text-align: center;
+}
+.btn-create a{
+    color: white;
+}
+.btn-create a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.number-item{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #a42e2e;
+    width: 30px;
+    height: 30px;
+    z-index: 200;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+/************
+ITEMS COMPONENT
+*************/
+
+.conteiner-component{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/************
+   HIGH BAR
+*************/
+
+.high-bar{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    text-align: left;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.high-bar:hover{
+    cursor: pointer;
+}
+
+.high-bar div{
+    width: 60%;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.high-bar a{
+    color: white;
+
+}
+
+.high-bar span{
+    font-size: calc(25px + 1vw) ;
+    margin-left: 20px;
+    display: block;
+    color: white;
+}
+
+.high-bar input{
+    font-size:20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+}
+.high-bar select{
+    font-size:20px;
+    border-radius: 10px;
+    text-align-last: center;
+    width: 20%;
+}
+
+.content{
+    position: relative;
+    z-index: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: transform .5s ease-in-out, opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+
+
+/************
+ITEM COMPONENT
+*************/
+
+.item-component{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: white;
+    margin: 1%;
+    width: 20%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.item-component .info-item-component{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 3px;
+    border-top: 2px solid rgb(161, 161, 161);
+}
+
+.info-item-component svg{
+    width: 30px;
+}
+.info-item-component div{
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-component img{
+    
+    max-width: 90%;
+    max-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.item-component p{
+    font-size: 1.1em;
+}
+.item-component h5{
+    font-size: 1.5em
+}
+
+.item-component .btn{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.img-recipe:hover{
+    opacity: 0.5;
+}
+
+/************
+ RECIPE PAGE
+*************/
+
+.recipePage-component{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.recipePage-component .high-bar{
+    height: 13vh;
+}
+.recipe-add{
+    width: 30%;
+    margin:20px;
+    text-align: center;
+}
+.user-recipes{
+    width: 70%;
+    margin:20px;
+    text-align: center;
+}
+
+#add-recipe{
+    margin: 20px;
+    color:white;
+}
+#add-recipe:hover{
+    color:black;
+}
+
+.description-info{
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+
+/************
+ RECIPE INFO VIEW
+*************/
+.itemInfo-component{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.itemInfo-conteiner{
+    display: flex;
+}
+.item-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-left{
+    width: 30%;
+    margin-right: 10px;
+    padding: 10px;
+}
+.item-ingredients{
+    text-align: center;
+}
+.item-ingredients ul{
+    list-style: none;
+}
+.item-image{
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.item-image img{
+    width:100%;
+    height: auto;
+}
+
+#beer_img{
+    height: 200px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.item-right{
+    width: 70%;
+    margin-left: 10px;
+}
+
+.item-specific{
+    display: flex;
+}
+.item-field{
+    margin: 10px;
+}
+.item-field svg{
+    height: 30px;
+    width: 30px;
+}
+.recipe-source-btn{
+    margin-top: 30px;
+}
+
+.item-more-info{
+    margin: 20px;
+}
+.item-more-info li{
+    margin: 20px;
+}
+
+/************
+RESPONSIVE STUFF
+*************/
+
+@media only screen and (max-width: 1000px) {
+    nav{
+        font-size: 1.6em;
+    }
+    #banner-image img{
+        width: 100%;
+        margin-top: 0;
+    }
+    .item-component{
+        width: 30%;
+        margin: 1.5vw;
+    }
+    .high-bar input{
+        width: 30%;
+    }
+    .high-bar select{
+        width: 30%;
+    }
+    .recipePage-component{
+        display: block;
+    }
+    .recipe-add{
+        width: 90%;
+    }
+    .user-recipes{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 670px) {
+    
+
+    .navbar-brand{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    #logo-nav{
+        width: 130px;
+    }
+    .right-icon{
+        margin-right: 0px;
+    }
+    
+    .right-icon svg{
+        margin-right: 0px;
+    }
+    
+    .left-icon{
+        margin-left: 0px;
+    }
+    .partyProgram-component{
+        display: block;
+    }
+    .settingParty-component{
+        width: 100%;
+    }
+    .friends-component{
+        width: 100%;
+    }
+    .right-icon{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-component{
+        width: 80%;
+        margin: 2vw;
+    }
+    .itemInfo-conteiner{
+        display: block;
+    }
+    .item-left{
+        width: 100%;
+    }
+    .item-right{
+        width: 100%;
+    }
+    .high-bar div{
+        width: 60%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+    }
+    .high-bar input{
+        font-size:20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .high-bar select{
+        font-size:20px;
+        border-radius: 10px;
+        text-align-last: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        display:none;
+        width: 90%;
+        position: fixed;
+        bottom:50px;
+        right: 25px;
+        z-index: 100;
+        background-color: white;
+        height: 400px;
+        overflow-y: scroll;
+        border-top: 3px solid black;
+    }
+    .list-component{
+        border-top: none;
+    }
+    .list{
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 5px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 100;
+        justify-content: center;
+        border: 2px solid black ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .list svg{
+        fill: black;
+        z-index: 150;
+        width: 50;
+        height: 50;
+    }
+}

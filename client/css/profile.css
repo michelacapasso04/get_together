@@ -1,0 +1,552 @@
+.body{
+  width: 100%;
+  height: 100%;
+}
+
+
+.middleComp{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+
+.entire{
+  display: flex;
+}
+.btn.btn-primary{
+  width: 100%;
+  font-size: 13px;
+  position: relative;
+}
+
+
+
+/** TOP BAR **/
+
+#title{
+  position: relative;
+  text-align: center;
+  bottom: 6px;
+  color: white;
+}
+
+.high-top {
+  animation: slideInDown;
+  animation-duration: 1s;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  display: inline-block;
+  background-color: orange;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* SIDE MENU */
+.high-left {
+  animation: slideInLeft;
+  animation-duration: 1s;
+  width: auto;
+  position: relative;
+  height: auto;
+  float: left;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  top: 15px;
+  bottom: 15px;
+}
+
+
+.leftB{
+  position: relative;
+  font-size: 13px;
+  text-align: center;
+  width: 15vw;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #21535b;
+  border-color: #21535b;
+  
+}
+
+.leftB:hover{
+  
+  background-color: #21535b;
+}
+.leftB:active{
+  background-color: #21535b;
+}
+
+.leftB:focus{
+  background-color: #21535b;
+}
+
+.logout{
+  font-size: 13px;
+  color: white;
+  width: 10vw;
+  margin-top: 20px;
+  position: relative;
+  background-color: #a42e2ef1;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logout:hover{
+  outline: none;
+  text-decoration: none;
+  background-color: darkred;
+}
+
+
+/** PROFILE INFO **/
+
+.leftInfo{
+  display: block;
+  margin: 1.5vw;
+}
+
+.profilePicDiv{
+  position: relative;
+  float: left;
+  width: 40%;
+  height: auto;
+  margin: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profilePic {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.data{
+  display: block;
+  width: auto;
+  margin: 1.5vw;
+}
+
+.info{
+  margin: 10px;
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  width: auto;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(249, 177, 101, 0.2), 0 6px 20px 0 rgba(249, 177, 101, 0.2);
+}
+
+/** EDIT PROFILE **/
+
+.editB{
+  font-size: 13px;
+  color: white;
+  width: 5vw;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.edit{
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+.send{
+  width: 30%;
+}
+
+/** FRIENDS **/
+
+
+.friend{
+  width: 30%;
+}
+
+.bottomB{
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.btn-view{
+  position: relative;
+  text-align: center;
+  background-color: #21535b;
+  border-color: #21535b; 
+  font-size: 13px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.btn-view:hover{
+  background-color: #21535b;
+}
+
+.btn-view:active{
+  background-color: #21535b;
+}
+
+.btn-view:focus{
+  background-color: #21535b;
+}
+
+.btn-remove{
+  font-size: 10px;
+  margin: auto;
+}
+
+#finfo{
+  font-size: 100%;
+}
+
+.finfo{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/** ADD FRIENDS **/
+
+#addFriend{
+  width: 30%;
+
+}
+
+#newFriendInput{
+  border-radius: 20px;
+  border-color: black;
+  border: 2px solid black;
+  padding: 4px;
+}
+
+#addFriendDiv{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/** NOTIFICATIONS **/
+
+.notPanel{
+  display: inline-block;
+  width: 90%
+}
+
+.slide {
+  animation: slideOutRight;
+  animation-duration: 1s;
+}
+
+.date{
+  font-size: 10px;
+  float: right;
+  margin: 4px;
+  position: relative;
+}
+
+
+.textIn{
+  top: 5px;
+  position: relative;
+}
+
+.bg-white{
+  width: 70%;
+  position: relative;
+  border-color: black;
+  border: 2px solid black;
+  text-align: center;
+  top: 4px;
+  bottom: 4px;
+  position: relative;
+  float: left;
+  background-color: white;
+  margin: 10px;
+}
+
+.bg-lightblue{
+  width: 70%;
+  position: relative;
+  border-color: black;
+  border: 2px solid black;
+  text-align: center;
+  top: 4px;
+  bottom: 4px;
+  position: relative;
+  float: left;
+  margin: 10px;
+  background-color:lightblue;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.button-div{
+  position: relative;
+}
+
+.btn-circle{ 
+    width: 30px; 
+    height: 30px; 
+    padding: 6px 0px; 
+    border-radius: 15px; 
+    font-size: 13px; 
+    text-align: center;
+    position: relative;
+    float: right;
+    border: white;
+    margin: 2px;
+    right: 5px;
+} 
+
+.btn-red {
+  background: darkred;
+}
+
+.btn-red:hover {
+  background: darkred;
+}
+
+.btn-red:focus{
+  outline: none;
+}
+
+.btn-red:active{
+  outline: none;
+  background: red;
+}
+
+.btn-green{
+  background: green;
+}
+
+.btn-green:hover {
+    background: darkgreen;
+}
+
+.btn-green:focus{
+  outline: none;
+  background: green;
+}
+
+.btn-delete{
+  position: relative;
+  float: right;
+  margin: 30px;
+  top: 10px;
+  background: lightgrey;
+}
+
+.btn-delete:hover{
+  background: grey;
+}
+
+.btn-delete:focus{
+  outline: none;
+}
+
+.btn-delete:active{
+  outline: none;
+  background: lightgrey;
+}
+/* -------------------------------------------------------------- */
+@media only screen and (max-width: 670px){
+
+  .friend{
+  width: 60%;
+  }
+  /*
+  .container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  float: none;
+  }*/
+
+  .entire{
+    align-items: center;
+  }
+
+.middleComp{
+  width: 90vw;
+  position: relative;
+  margin: 10px;
+}
+
+
+.high-left {
+  width: 100%;
+  height: auto;
+  margin: auto ;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.edit{
+  width: auto;
+}
+
+.leftB{
+  position: relative;
+  font-size: calc(8px + 0.6vw);
+  text-align: center;
+  width: auto;
+  background-color: #21535b;
+  border-color: #21535b;
+  vertical-align: center;
+}
+
+.logout{
+  font-size:calc(8px + 0.6vw);
+  color: white;
+  width: auto;
+  margin: auto;
+  position: relative;
+  background-color: #a42e2ef1;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.info{
+  margin: 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(249, 177, 101, 0.2), 0 6px 20px 0 rgba(249, 177, 101, 0.2);
+}
+
+.leftInfo{
+  display: block;
+  width: 20vw;
+  margin: 1.5vw;
+}
+
+.finfo{
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.notPanel{
+  display: inline-flex;
+  width: 100vw;
+  align-items: center;
+  float: left;
+
+}
+
+.bg-white{
+  width: 80vw;
+  position: relative;
+  border-color: black;
+  border: 2px solid black;
+  text-align: center;
+  top: 4px;
+  bottom: 4px;
+  position: relative;
+  float: left;
+  background-color: white;
+  
+}
+
+.bg-lightblue{
+  width: 80vw;
+  height: auto;
+  position: relative;
+  margin: 10px;
+}
+
+.textIn{
+  font-size: calc(10px + 0.3vw);
+  position: relative;
+}
+
+.date{
+  font-size: calc(8px + 0.3vw);;
+  float: right;
+  margin: 4px;
+  position: relative;
+}
+
+.button-div{
+  margin: 10px;
+  float: right;
+  width: 30%;
+}
+
+.btn-delete{
+  position: relative;
+  float: right;
+  width: auto;
+  margin-left: 0px;
+  background: lightgrey;
+}
+
+.btn-circle{ 
+    width: 23px; 
+    height: 23px; 
+    padding: 6px 0px; 
+    border-radius: 15px; 
+    font-size: 8px; 
+    text-align: center;
+    border: white;
+}
+
+.btn-red{
+  background:#a42e2ef1;
+  margin-left: 20px;
+}
+.btn-green{
+  margin-left: 20px;
+}
+
+
+#addFriend{
+  width: auto;
+}
+
+#pinfo{
+  font-size: calc(9px + 0.3vw);
+}
+
+
+}

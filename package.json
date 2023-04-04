@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Web app for let you organize your party",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "mon": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fracerma/get-togheter.git"
+  },
+  "author": "Francesco Cermaria, Michela Capasso, Riccardo Casciotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fracerma/get-togheter/issues"
+  },
+  "homepage": "https://github.com/fracerma/get-togheter#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "build-url": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "exports": "0.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-socket.io-session": "^1.3.5",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "nodemon": "^2.0.3",
+    "pg": "^8.0.3",
+    "request": "^2.88.2",
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1",
+    "socket.io": "^2.3.0",
+    "vue-socket.io": "^3.0.9"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "10.15"
+  }
+}

@@ -1,0 +1,132 @@
+/************
+    SFONDO
+************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+[v-cloak] {
+    display: none;
+  }
+  
+body{
+    width: 100%; height: 100%;
+    background: url( ../image/register.jpeg) no-repeat center top;
+    position: fixed;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: blur(2px) brightness(90%);
+    overflow-x: hidden;
+    background-attachment: fixed;
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#pan{
+    background-color: white;
+    border-radius: 25px;
+    width: 30%;
+    height: 40%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.line{
+    display: flex;
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    width: 90%;
+}
+.txt{
+    color: coral;
+    vertical-align: middle;
+    font-size: 150%;
+    width: 40% ;
+    margin-left: 0em;
+}
+
+.form{
+    margin: auto;
+    width: 50%;
+    border: none;
+    text-align: center;
+    margin-left: 15px;
+    border-bottom: 0.1px solid grey ;
+}
+.icon{
+    height:  40px; 
+    width:  40px; 
+    margin-left: 0px;
+    opacity:  .20; 
+    transition:  all .3s ease; 
+}
+
+span{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+button { 
+    width:  50%;
+    margin-left: 25%;
+    border-radius:  25px; 
+    padding:  15px 40px;
+    background-color: coral; 
+    color:white;
+    font-size:  14px;
+    font-weight:  500; 
+    box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13); 
+    border:  none;
+    font-size: 110%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .errors{
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 1025px) {
+    #pan{
+        background-color: white;
+        border-radius: 25px;
+        width:70%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .line{
+        display: flex;
+        background-color: white;
+        margin: auto;
+        margin-top: 10%;
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    #pan{
+        background-color: white;
+        border-radius: 25px;
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .line{
+        display: flex;
+        background-color: white;
+        margin: auto;
+        margin-top: 10%;
+        width: 95%;
+    }
+  }
+

@@ -1,0 +1,93 @@
+/************
+    SFONDO
+************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    width: 100%; height: 100%;
+    background: url( ../image/fpbackground.jpeg) no-repeat center top;
+    position: fixed;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: blur(2px) brightness(90%);
+    overflow-x: hidden;
+    background-attachment: fixed;
+    margin:0px;
+    padding:0px;
+
+}
+#pan{
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.434);
+    margin: auto;
+    margin-top: 10%;
+    width: 40%;
+    height: 30%;
+    align-content: center;
+    display:table;
+}
+
+#infoapp{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    color: floralwhite;
+    font-weight: bold;
+    display: block;
+    display: inline-block;
+    line-height: 35px;
+    display:table-cell;
+    vertical-align: middle;
+    padding:2px;
+}
+
+.linkfp{
+    color:orange;
+    font-weight: bolder;
+    text-underline-position: below; 
+}
+.linkfp:hover{
+    color:red;
+}
+
+/****************************
+    pannello in basso
+*****************************/
+
+#aboutuspan{
+    width: 100%;
+    height: 10%;
+    background: rgba(237, 135, 91, 0.673);
+    align-content: center;
+    position: fixed;
+    bottom:0;
+    overflow: hidden;
+    display: table;
+}
+
+#aboutustext{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    display:table-cell;
+    vertical-align: middle;
+}
+#documentation{
+    color: black;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 670px) {
+    #pan{
+        border-radius: 25px;
+        background: rgba(0, 0, 0, 0.434);
+        margin: auto;
+        margin-top: 80px;
+        width: 300px;
+        align-content: center;
+        display:table;
+    }
+}
